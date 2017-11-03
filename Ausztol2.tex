@@ -1,0 +1,78 @@
+\documentclass[]{beamer}
+\usepackage[MeX]{polski}
+%\usepackage[cp1250]{inputenc}
+%\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\beamersetaveragebackground{blue!10}
+\usetheme{Warsaw}
+\usecolortheme[rgb={0.1,0.5,0.7}]{structure}
+\usepackage{beamerthemesplit}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+
+\title{Prezentacja na temat ogrodnictwa} \TeX a}
+\date{}
+
+\begin{document}
+
+\frame
+{
+\frametitle{Bloki w \TeX u}
+\begin{block}
+{Przykładowy blok w \TeX u}
+Tu wpisujemy treśc
+\end{block}
+}
+
+\frame
+{
+\begin{figure}[here]
+\begin{center}
+\includegraphics[scele=0.4]{ogrodnictwo.jpg}
+\end{center}
+\end{figure}
+}
+
+\frame
+{
+\begin{columns}
+\column{0.2\textwidth}
+\includegraphics[scale=0.2]{ogrodnictwo.jpg}
+\column{0.4\textwidth}
+\includegraphics[scale=0.2]{ogrodnictwo.jpg}
+\end{columns}
+}
+
+\frame
+{
+\begin{table}
+\begin{tabular}{c|c|c}
+$$ & $notowania jabłek$ & $notowania gruszek$ \\
+\hline
+$Polska$ & 2 & 3\pause \\
+\hline
+$USA$ & 3 & 1\pause \\
+\hline
+$Francja$ & 1 & 1
+\end{tabular}
+\end{table}
+}
+
+\frame
+{
+\frametitle{Produkty na targach ogrodniczych}
+\begin{itemize}
+\item Nasiona warzyw
+\item Rośliny dojniczkowe
+\item Maszyny rolnicze
+\item Sadzonki
+\end{itemize}
+}
+
+
+\end{document}
